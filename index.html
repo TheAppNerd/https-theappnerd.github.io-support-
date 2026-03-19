@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Bit Counts — Support</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+            background: #F5F5F0;
+            color: #1a1a1a;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #859F43, #B4C979);
+            padding: 60px 24px 48px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Contact card */
+        .contact-card {
+            background: white;
+            border-radius: 16px;
+            padding: 28px 24px;
+            margin: -24px 20px 32px;
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            text-align: center;
+            position: relative;
+        }
+
+        .contact-card h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .contact-card p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 16px;
+        }
+
+        .email-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #859F43, #B4C979);
+            color: white;
+            text-decoration: none;
+            padding: 14px 32px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .email-button:hover { opacity: 0.9; }
+
+        /* FAQ */
+        .section-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 32px 0 16px;
+            padding: 0 20px;
+            max-width: 680px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .faq-group {
+            max-width: 640px;
+            margin: 0 auto 24px;
+            padding: 0 20px;
+        }
+
+        .faq-group-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #859F43;
+            margin-bottom: 12px;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: 12px;
+            margin-bottom: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 20px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .faq-question:hover { background: #fafafa; }
+
+        .faq-chevron {
+            font-size: 12px;
+            color: #999;
+            transition: transform 0.2s ease;
+            flex-shrink: 0;
+            margin-left: 12px;
+        }
+
+        .faq-item.open .faq-chevron {
+            transform: rotate(90deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.25s ease;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+        }
+
+        .faq-answer-inner {
+            padding: 0 20px 16px;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.65;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 13px;
+            color: #999;
+        }
+
+        footer a { color: #859F43; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 480px) {
+            .hero { padding: 48px 20px 40px; }
+            .hero h1 { font-size: 24px; }
+            .contact-card { margin: -20px 16px 28px; padding: 24px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <h1>Every Bit Counts</h1>
+    <p>Support & Frequently Asked Questions</p>
+</div>
+
+<div class="contact-card">
+    <h2>Need Help?</h2>
+    <p>We typically respond within 24 hours.</p>
+    <a href="mailto:hello@thecosypeople.com.au?subject=Every%20Bit%20Counts%20Support" class="email-button">Email Us</a>
+</div>
+
+<!-- APP FAQ -->
+<div class="faq-group">
+    <div class="faq-group-title">Using the App</div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do I add an expense?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Tap the + button in the centre of the tab bar to add a new expense. Enter the amount, choose a category, and optionally add a name and date.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do I edit or delete an expense?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Tap on any expense in your recent activity or spending list to edit it. You can also swipe left on an expense in the Spending tab to delete it.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">What's the difference between Needs and Wants?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Needs are essential expenses like rent, utilities, and groceries. Wants are discretionary spending like entertainment or dining out. Categorising helps you understand your spending habits.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do I create custom categories?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">When adding an expense, tap 'Choose Category' and then tap the + button to create a new category. You can pick an icon and colour for each category.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do recurring expenses work?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">When adding an expense, toggle 'Recurring' and choose a frequency (daily, weekly, fortnightly, monthly, or yearly). The app will automatically log the expense on each due date. Manage your recurring expenses from Settings > Recurring Expenses.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Does the app have widgets?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes! Long-press your Home Screen, tap the + button, and search for Every Bit Counts. There are four widgets: Today's Spending, Budget Ring, Weekly Summary, and Quick Add for logging expenses without opening the app.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Does my data sync across devices?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. Your expenses sync automatically via iCloud when you're signed in with the same Apple ID. Changes on one device will appear on your other devices shortly after.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Where is my data stored?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">All your data is stored locally on your device and syncs via iCloud if you're signed in. We don't operate servers that store your financial information — your data stays private.</div></div>
+    </div>
+</div>
+
+<!-- SUBSCRIPTION FAQ -->
+<div class="faq-group">
+    <div class="faq-group-title">Subscription</div>
+
+    <div class="faq-item">
+        <div class="faq-question">What does the subscription include?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">The subscription unlocks all premium features including the full tips library, advanced insights, and unlimited categories. It helps support ongoing development of the app.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do I restore my subscription?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Go to Settings and tap 'Restore Subscription'. Sign in with the Apple ID you used to purchase, and your subscription will be restored. The app also attempts to restore your subscription automatically on each launch.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do I manage or cancel my subscription?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Tap 'Manage Subscription' in Settings to open your Apple subscription settings. From there you can cancel, change plans, or update payment methods. You can also go to Settings > Apple Account > Subscriptions on your device.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Can I use my subscription on another device?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes. Your subscription is tied to your Apple ID, not your device. Just sign in with the same Apple ID on your other device and your subscription will be restored automatically.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Will I lose my data if I cancel?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">No. All your expenses and data remain on your device. You'll keep access to core features; only premium features will be locked.</div></div>
+    </div>
+</div>
+
+<!-- HELP FAQ -->
+<div class="faq-group">
+    <div class="faq-group-title">Help & Settings</div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do I change the currency?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Go to Settings > Preferences > Currency and select your preferred currency. Amounts throughout the app will update automatically.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do I change the language?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Go to Settings > Preferences > Language and choose from 10 supported languages. The app detects your device language automatically on first install.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do I change the app colour theme?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">The app uses a green theme by default. Colour customisation is not currently available but may be added in a future update.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Can I replay the app tour?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Yes! Go to Settings and tap 'Replay Tutorial' to walk through the guided tour again at any time.</div></div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">How do I delete all my data?<span class="faq-chevron">&#9656;</span></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Go to Settings > Data > Delete All Data. This permanently removes all expenses, goals, and settings. This action cannot be undone.</div></div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 The Cosy People. All rights reserved.</p>
+    <p style="margin-top: 8px;">
+        <a href="https://theappnerd.github.io/privacy.github.io/">Privacy Policy</a>
+        &nbsp;&middot;&nbsp;
+        <a href="https://theappnerd.github.io/">Terms & Conditions</a>
+    </p>
+</footer>
+
+<script>
+    document.querySelectorAll('.faq-question').forEach(function(q) {
+        q.addEventListener('click', function() {
+            var item = this.parentElement;
+            var wasOpen = item.classList.contains('open');
+            // Close all in same group
+            item.parentElement.querySelectorAll('.faq-item.open').forEach(function(el) {
+                el.classList.remove('open');
+            });
+            if (!wasOpen) item.classList.add('open');
+        });
+    });
+</script>
+
+</body>
+</html>
